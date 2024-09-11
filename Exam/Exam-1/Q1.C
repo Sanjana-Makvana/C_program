@@ -49,5 +49,8 @@ main() {
 	prints their values, demonstrates the use of constants in expressions, and displays the memory 
 	size of each data type using sizeof().
 */
+
+// doubt
+//  3.Demonstrate the use of constants by defining some constants and using them in expressions.
 	
 
