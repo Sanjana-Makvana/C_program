@@ -46,7 +46,7 @@ main() {
 
 /* 
 	The C program declares variables of different data types (int, float, double, char), 
-	prints their values, demonstrates the use of constants in expressions, and displays the memory 
+	prints their values, and displays the memory 
 	size of each data type using sizeof().
 */
 
