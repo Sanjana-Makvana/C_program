@@ -27,7 +27,7 @@ main() {
     for(a = 0; a<b; a++) {
         printf("arry[%d] = ", a);
         scanf("%d", &arry[a]);
-        average = arry[a];
+        average += arry[a];
     }
 
     average /= b;
