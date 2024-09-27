@@ -27,11 +27,10 @@
 	The sum of column 2: 11
 */
 
-#include <stdio.h>
-
 main() {
 	
-    int a , b , row, col;  
+    int a , b , row, col;
+    int rnum = 0 , cnum=0;
 
     printf("Enter the array's row size: ");
     scanf("%d", &row);
@@ -41,35 +40,32 @@ main() {
     int arr[row][col]; 
 
     printf("Enter array's elements:\n");
-    for (a = 0; a < row; a++) {
-        for (b = 0; b < col; b++) {
+    for(a = 0; a < row; a++) {
+        for(b = 0; b < col; b++) {
             printf("arr[%d][%d] = ", a, b);
             scanf("%d", &arr[a][b]);
         }
     }
+    
+    printf("Enter row number : ",  row);
+    scanf("%d", &rnum);
 
-    int rownum , rowsum = 0;
-    printf("Enter row number: ");
-    scanf("%d", &rownum);
-
-    printf("Elements of row %d: ", rownum);
-    for (b = 0; b < col; b++) {
-        printf("%d ", arr[rownum][b]);
-        rowsum += arr[rownum][b];
+    printf("Elements of row %d: ",rnum);
+    for(b = 0; b < col; b++) {
+        printf("%d ", arr[rnum][b]);
+        rnum += arr[rnum][b];
     }
-    printf("\nThe sum of row %d: %d\n", rownum, rowsum);
+    printf("\nThe sum of row %d: %d\n", rnum, rnum);
 
-    int colnum , colsum = 0;
-    printf("Enter column number: ");
-    scanf("%d", &colnum);
 
-    printf("Elements of column %d: ", colnum);
-    for (a = 0; a < row; a++) {
-        printf("%d ", arr[a][colnum]);
-        colsum += arr[a][colnum];
+    printf("Enter column number: ", col);
+    scanf("%d", &cnum);
+
+    printf("Elements of column %d: ", cnum);
+    for(a = 0; a < row; a++) {
+        printf("%d ", arr[cnum][a]);
+        cnum += arr[cnum][a];
     }
-    printf("\nThe sum of column %d: %d\n", colnum, colsum);
-
+    printf("\nThe sum of column %d: %d\n", cnum, cnum);
 }
-
 
